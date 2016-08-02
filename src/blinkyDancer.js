@@ -6,10 +6,11 @@ makeBlinkyDancer.prototype = Object.create(Dancer.prototype);
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
 makeBlinkyDancer.prototype.step = function() {
-  var context = this;
-  var makeBounce = function() {
-    context.$node.toggle( 'bounce', { times: 3 }, 'slow' );
-  };
+  // var context = this;
+  // var makeBounce = function() {
+  //   context.$node.toggle();
+  // };
 
-  Dancer.prototype.step.call(this, makeBounce);
+  Dancer.prototype.step.call(this);
+  this.$node.toggle();
 };

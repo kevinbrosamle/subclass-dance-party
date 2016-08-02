@@ -6,10 +6,11 @@ makeExplodyDancer.prototype = Object.create(makeBlinkyDancer.prototype);
 makeExplodyDancer.prototype.constructor = makeExplodyDancer;
 
 makeExplodyDancer.prototype.step = function() {
-  var context = this;
-  var makeRotate = function() {
-    context.$node.toggle('explode', { pieces: Math.pow(4, 2)});
-  };
+  // var context = this;
+  // var makeRotate = function() {
+  //   context.$node.toggle('explode', { pieces: Math.pow(4, 2)});
+  // };
   
-  Dancer.prototype.step.call(this, makeRotate);
+  Dancer.prototype.step.call(this);
+  this.$node.toggle('explode', { pieces: Math.pow(4, 2)});
 };

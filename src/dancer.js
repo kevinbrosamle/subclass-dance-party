@@ -7,7 +7,13 @@ var Dancer = function(top, left, timeBetweenSteps) {
 };
 
 Dancer.prototype.step = function(func) {
-  setTimeout(func.bind(this), this._timeBetweenSteps);
+  // setTimeout(func.bind(this), this._timeBetweenSteps);
+  // var context = this;
+  // var runner = function() {
+  //   func();
+  //   context.step(this._timeBetweenSteps);
+  // };
+  setTimeout(this.step.bind(this), this._timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left) {
