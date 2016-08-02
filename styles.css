@@ -5,6 +5,10 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-image: url('http://orig08.deviantart.net/b8c1/f/2015/322/d/d/led_light_up_dance_floor_by_winampers_pro-d9h4lzl.jpg');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -24,3 +28,4 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
