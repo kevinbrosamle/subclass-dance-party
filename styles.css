@@ -27,5 +27,22 @@ body, a:link, a:visited, a:active{
 .dancer{
   border-radius:10px;
   position:absolute;
+  content: url(http://i.imgur.com/vJuUEyE.png);
+  height: 15%;
+  width: 15%;
+}
+.bouncyDancer{
+  border-radius:10px;
+  position:absolute;
+  content: url(http://www.i2clipart.com/cliparts/5/c/e/5/1280455ce538d42deaf6badb0e1bce564971bf.png);
+  height: 15%;
+  width: 15%;
+}
+.slowDancer{
+  border-radius:10px;
+  position:absolute;
+  content: url(http://cliparts.co/cliparts/6ir/6KE/6ir6KEjMT.png);
+  height: 15%;
+  width: 15%;
 }
 
