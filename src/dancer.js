@@ -18,3 +18,10 @@ Dancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineUp = function() {
+  var location = 10;
+  for (var i = 0; i < window.dancers.length; i++) {
+    dancers[i].setPosition(location, 10);
+    location += 100;
+  }
+};

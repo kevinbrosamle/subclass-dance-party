@@ -15,7 +15,19 @@
       <span class="title">object dance party</span>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BouncyDancer">add a bouncy dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SlowDancer">add a slow dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SlowDancer">add a slow dancer</a>
+      <a href="#" class='lineUp'>line up</a>     </div>
     <script src="src/init.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.lineUp').click(function() {
+          Dancer.prototype.lineUp();
+        });
+        $('.lineUp').mouseover(function() {
+          // $('.bouncyDancer').css("background-color", "yellow");
+          console.log('here');
+        });
+      });
+    </script>
   </body>
 </html>
